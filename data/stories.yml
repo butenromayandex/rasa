@@ -1,0 +1,36 @@
+version: "3.1"
+
+stories:
+  - story: greet and ask architecture
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_architecture
+      - action: utter_architecture_response
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: ask for more info
+    steps:
+      - intent: request_info
+      - action: utter_ask_more
+
+  - story: affirm
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - story: deny
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - story: inform
+    steps:
+      - intent: inform
+      - action: utter_inform
+
+  - story: utter_acknowledge
